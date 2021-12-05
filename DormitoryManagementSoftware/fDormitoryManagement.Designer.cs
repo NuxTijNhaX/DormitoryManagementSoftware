@@ -35,6 +35,7 @@ namespace DormitoryManagementSoftware
             Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
             this.lblLogin = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuSeparator2 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.btnCreateReports = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnImgCreateReports = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -67,7 +68,6 @@ namespace DormitoryManagementSoftware
             this.btnManageRoom = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnImgManageRoom = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.bunifuSeparator2 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.btnCreateReports.SuspendLayout();
             this.btnManageBills.SuspendLayout();
             this.btnManageRule.SuspendLayout();
@@ -114,6 +114,21 @@ namespace DormitoryManagementSoftware
             this.bunifuLabel4.Text = "Quản Lý Nhân Viên";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuSeparator2
+            // 
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator2.BackgroundImage")));
+            this.bunifuSeparator2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator2.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator2.LineThickness = 1;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(261, 424);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator2.Size = new System.Drawing.Size(765, 14);
+            this.bunifuSeparator2.TabIndex = 9;
             // 
             // btnCreateReports
             // 
@@ -354,7 +369,7 @@ namespace DormitoryManagementSoftware
             this.bunifuLabel7.CursorType = System.Windows.Forms.Cursors.Hand;
             this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuLabel7.Location = new System.Drawing.Point(33, 194);
+            this.bunifuLabel7.Location = new System.Drawing.Point(33, 195);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(107, 42);
@@ -384,7 +399,7 @@ namespace DormitoryManagementSoftware
             this.btnImgMakeContract.ImageSize = new System.Drawing.Size(94, 88);
             this.btnImgMakeContract.ImageZoomSize = new System.Drawing.Size(114, 108);
             this.btnImgMakeContract.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnImgMakeContract.InitialImage")));
-            this.btnImgMakeContract.Location = new System.Drawing.Point(29, 89);
+            this.btnImgMakeContract.Location = new System.Drawing.Point(29, 90);
             this.btnImgMakeContract.Name = "btnImgMakeContract";
             this.btnImgMakeContract.Rotation = 0;
             this.btnImgMakeContract.ShowActiveImage = true;
@@ -847,21 +862,6 @@ namespace DormitoryManagementSoftware
             this.btnImgManageRoom.Zoom = 20;
             this.btnImgManageRoom.ZoomSpeed = 10;
             this.btnImgManageRoom.Click += new System.EventHandler(this.btnImgManageRoom_Click);
-            // 
-            // bunifuSeparator2
-            // 
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator2.BackgroundImage")));
-            this.bunifuSeparator2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuSeparator2.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-            this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(261, 424);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-            this.bunifuSeparator2.Size = new System.Drawing.Size(765, 14);
-            this.bunifuSeparator2.TabIndex = 9;
             // 
             // fDormitoryManagement
             // 

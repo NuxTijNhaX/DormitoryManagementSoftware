@@ -150,6 +150,8 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\AccountTypeDAO.cs" />
+    <Compile Include="DAO\BillDAO.cs" />
+    <Compile Include="DAO\BillTypeDAO.cs" />
     <Compile Include="DAO\ContractDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\RoomDAO.cs" />
@@ -187,6 +189,18 @@
     </Compile>
     <Compile Include="fDormitoryManagement.Designer.cs">
       <DependentUpon>fDormitoryManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInRoomStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInRoomStudent.Designer.cs">
+      <DependentUpon>fInRoomStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCreatingBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCreatingBill.Designer.cs">
+      <DependentUpon>fCreatingBill.cs</DependentUpon>
     </Compile>
     <Compile Include="fReport.cs">
       <SubType>Form</SubType>
@@ -258,6 +272,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fDormitoryManagement.resx">
       <DependentUpon>fDormitoryManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInRoomStudent.resx">
+      <DependentUpon>fInRoomStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCreatingBill.resx">
+      <DependentUpon>fCreatingBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fReport.resx">
       <DependentUpon>fReport.cs</DependentUpon>
@@ -349,6 +369,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\analytics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

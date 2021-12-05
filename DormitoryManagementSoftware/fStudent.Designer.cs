@@ -37,14 +37,6 @@ namespace DormitoryManagementSoftware
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fStudent));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridViewStudent = new System.Windows.Forms.DataGridView();
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNameStudent = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colIDCard = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDateOfBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingStudent = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -85,6 +77,14 @@ namespace DormitoryManagementSoftware
             this.label16 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNameStudent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colIDCard = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDateOfBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingStudent)).BeginInit();
@@ -166,75 +166,6 @@ namespace DormitoryManagementSoftware
             this.dataGridViewStudent.Size = new System.Drawing.Size(653, 439);
             this.dataGridViewStudent.TabIndex = 3;
             this.dataGridViewStudent.SelectionChanged += new System.EventHandler(this.dataGridViewStudent_SelectionChanged);
-            // 
-            // colID
-            // 
-            this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colID.DataPropertyName = "ID";
-            this.colID.HeaderText = "ID";
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            this.colID.Width = 53;
-            // 
-            // colMSSV
-            // 
-            this.colMSSV.DataPropertyName = "MSSV";
-            this.colMSSV.HeaderText = "MSSV";
-            this.colMSSV.Name = "colMSSV";
-            this.colMSSV.ReadOnly = true;
-            // 
-            // colNameStudent
-            // 
-            this.colNameStudent.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colNameStudent.DataPropertyName = "Name";
-            this.colNameStudent.HeaderText = "Tên";
-            this.colNameStudent.Name = "colNameStudent";
-            this.colNameStudent.ReadOnly = true;
-            this.colNameStudent.Width = 64;
-            // 
-            // colIDCard
-            // 
-            this.colIDCard.DataPropertyName = "IDCard";
-            this.colIDCard.FillWeight = 90F;
-            this.colIDCard.HeaderText = "Số CMND";
-            this.colIDCard.Name = "colIDCard";
-            this.colIDCard.ReadOnly = true;
-            this.colIDCard.Width = 90;
-            // 
-            // colSex
-            // 
-            this.colSex.DataPropertyName = "Sex";
-            this.colSex.FillWeight = 85F;
-            this.colSex.HeaderText = "Giới Tính";
-            this.colSex.Name = "colSex";
-            this.colSex.ReadOnly = true;
-            this.colSex.Visible = false;
-            this.colSex.Width = 85;
-            // 
-            // colDateOfBirth
-            // 
-            this.colDateOfBirth.DataPropertyName = "dateOfBirth";
-            this.colDateOfBirth.FillWeight = 90F;
-            this.colDateOfBirth.HeaderText = "Ngày Sinh";
-            this.colDateOfBirth.Name = "colDateOfBirth";
-            this.colDateOfBirth.ReadOnly = true;
-            this.colDateOfBirth.Visible = false;
-            this.colDateOfBirth.Width = 90;
-            // 
-            // colPhone
-            // 
-            this.colPhone.DataPropertyName = "phoneNumber";
-            this.colPhone.HeaderText = "SĐT";
-            this.colPhone.Name = "colPhone";
-            this.colPhone.ReadOnly = true;
-            // 
-            // colAddress
-            // 
-            this.colAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colAddress.DataPropertyName = "Address";
-            this.colAddress.HeaderText = "Địa Chỉ";
-            this.colAddress.Name = "colAddress";
-            this.colAddress.ReadOnly = true;
             // 
             // bindingStudent
             // 
@@ -829,9 +760,9 @@ namespace DormitoryManagementSoftware
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
             this.label11.Location = new System.Drawing.Point(12, 197);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 20);
+            this.label11.Size = new System.Drawing.Size(76, 20);
             this.label11.TabIndex = 57;
-            this.label11.Text = "Địa chỉ:";
+            this.label11.Text = "Quê quán:";
             // 
             // label2
             // 
@@ -969,6 +900,75 @@ namespace DormitoryManagementSoftware
             this.btnClose.TabStop = false;
             this.btnClose.Zoom = 10;
             // 
+            // colID
+            // 
+            this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colID.DataPropertyName = "ID";
+            this.colID.HeaderText = "ID";
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            this.colID.Width = 53;
+            // 
+            // colMSSV
+            // 
+            this.colMSSV.DataPropertyName = "MSSV";
+            this.colMSSV.HeaderText = "MSSV";
+            this.colMSSV.Name = "colMSSV";
+            this.colMSSV.ReadOnly = true;
+            // 
+            // colNameStudent
+            // 
+            this.colNameStudent.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colNameStudent.DataPropertyName = "Name";
+            this.colNameStudent.HeaderText = "Tên";
+            this.colNameStudent.Name = "colNameStudent";
+            this.colNameStudent.ReadOnly = true;
+            this.colNameStudent.Width = 64;
+            // 
+            // colIDCard
+            // 
+            this.colIDCard.DataPropertyName = "IDCard";
+            this.colIDCard.FillWeight = 90F;
+            this.colIDCard.HeaderText = "Số CMND";
+            this.colIDCard.Name = "colIDCard";
+            this.colIDCard.ReadOnly = true;
+            this.colIDCard.Width = 90;
+            // 
+            // colSex
+            // 
+            this.colSex.DataPropertyName = "Sex";
+            this.colSex.FillWeight = 85F;
+            this.colSex.HeaderText = "Giới Tính";
+            this.colSex.Name = "colSex";
+            this.colSex.ReadOnly = true;
+            this.colSex.Visible = false;
+            this.colSex.Width = 85;
+            // 
+            // colDateOfBirth
+            // 
+            this.colDateOfBirth.DataPropertyName = "dateOfBirth";
+            this.colDateOfBirth.FillWeight = 90F;
+            this.colDateOfBirth.HeaderText = "Ngày Sinh";
+            this.colDateOfBirth.Name = "colDateOfBirth";
+            this.colDateOfBirth.ReadOnly = true;
+            this.colDateOfBirth.Visible = false;
+            this.colDateOfBirth.Width = 90;
+            // 
+            // colPhone
+            // 
+            this.colPhone.DataPropertyName = "phoneNumber";
+            this.colPhone.HeaderText = "SĐT";
+            this.colPhone.Name = "colPhone";
+            this.colPhone.ReadOnly = true;
+            // 
+            // colAddress
+            // 
+            this.colAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colAddress.DataPropertyName = "Address";
+            this.colAddress.HeaderText = "Quê quán";
+            this.colAddress.Name = "colAddress";
+            this.colAddress.ReadOnly = true;
+            // 
             // fStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1041,6 +1041,7 @@ namespace DormitoryManagementSoftware
         private Bunifu.Framework.UI.BunifuMetroTextbox txbMSSV;
         private System.Windows.Forms.Label lblId;
         private Bunifu.UI.WinForms.BunifuDropdown dropID;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMSSV;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNameStudent;
@@ -1049,6 +1050,5 @@ namespace DormitoryManagementSoftware
         private System.Windows.Forms.DataGridViewTextBoxColumn colDateOfBirth;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPhone;
         private System.Windows.Forms.DataGridViewTextBoxColumn colAddress;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnDelete;
     }
 }

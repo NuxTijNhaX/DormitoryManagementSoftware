@@ -51,5 +51,12 @@ namespace DormitoryManagementSoftware.DAO
 
             return DataProvider.Instance.ExecuteQuery(query).Rows[0];
         }
+
+        public string GetIdByNameRoom(string nameRoom)
+        {
+            string query = $"SELECT ID FROM ROOM WHERE NAME = N'{nameRoom}';";
+
+            return DataProvider.Instance.ExecuteQuery(query).Rows[0][0].ToString();
+        } 
     }
 }

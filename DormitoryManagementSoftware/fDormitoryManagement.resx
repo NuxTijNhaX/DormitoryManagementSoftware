@@ -124,6 +124,14 @@
     <value>#bunifu-label { padding: 0px; margin: auto; padding-top: 0px;font-family: 'Segoe UI Semibold'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(242, 111, 51); text-align: center; }</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuSeparator2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAv0AAAAOCAYAAAC8X6OKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABTSURBVHhe7daxDQAgDASx3ymDsTsLQEOTLjWypdvhAgAA
+        AAAAAAAAAAAAAAAAAAAAAAAANHvVkSRJkvRvb/0BAAAAAAAAAAAAAAAAAAAAAICh5AJvgbGxuRPtnQAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btnCreateReports.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAKwAAACiCAYAAADcOyaoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -3526,14 +3534,6 @@
         3S2O0Q9Z2pyMMaZNFHhDAM5KQfmq0MQVDeKzpvBdU1PKGpNkczLGmC6jQJ0J2qkSM5MI8tejzr8LLOxj
         1ozyhiTZlMxsc9ddd1nWXItAfxh6c4nOQR9vQNpObPvSYbF9t6z50V0/8/8Bgo32YaxpGUMAAAAASUVO
         RK5CYII=
-</value>
-  </data>
-  <data name="bunifuSeparator2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAv0AAAAOCAYAAAC8X6OKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABTSURBVHhe7daxDQAgDASx3ymDsTsLQEOTLjWypdvhAgAA
-        AAAAAAAAAAAAAAAAAAAAAAAANHvVkSRJkvRvb/0BAAAAAAAAAAAAAAAAAAAAAICh5AJvgbGxuRPtnQAA
-        AABJRU5ErkJggg==
 </value>
   </data>
 </root>

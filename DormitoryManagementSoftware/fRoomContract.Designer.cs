@@ -40,7 +40,7 @@ namespace DormitoryManagementSoftware
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnInRoomStudent = new Bunifu.Framework.UI.BunifuThinButton2();
             this.checkBoxReceiveRoom = new Bunifu.Framework.UI.BunifuCheckbox();
             this.txbPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label10 = new System.Windows.Forms.Label();
@@ -106,7 +106,7 @@ namespace DormitoryManagementSoftware
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.bunifuThinButton22);
+            this.groupBox1.Controls.Add(this.btnInRoomStudent);
             this.groupBox1.Controls.Add(this.checkBoxReceiveRoom);
             this.groupBox1.Controls.Add(this.txbPrice);
             this.groupBox1.Controls.Add(this.label10);
@@ -124,30 +124,31 @@ namespace DormitoryManagementSoftware
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Chi Tiết Phòng";
             // 
-            // bunifuThinButton22
+            // btnInRoomStudent
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "Sinh Viên Đang Ở";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(16, 186);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(215, 40);
-            this.bunifuThinButton22.TabIndex = 50;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnInRoomStudent.ActiveBorderThickness = 1;
+            this.btnInRoomStudent.ActiveCornerRadius = 20;
+            this.btnInRoomStudent.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnInRoomStudent.ActiveForecolor = System.Drawing.Color.White;
+            this.btnInRoomStudent.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnInRoomStudent.BackColor = System.Drawing.SystemColors.Control;
+            this.btnInRoomStudent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInRoomStudent.BackgroundImage")));
+            this.btnInRoomStudent.ButtonText = "Sinh Viên Đang Ở";
+            this.btnInRoomStudent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInRoomStudent.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInRoomStudent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnInRoomStudent.IdleBorderThickness = 1;
+            this.btnInRoomStudent.IdleCornerRadius = 20;
+            this.btnInRoomStudent.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnInRoomStudent.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnInRoomStudent.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnInRoomStudent.Location = new System.Drawing.Point(16, 186);
+            this.btnInRoomStudent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnInRoomStudent.Name = "btnInRoomStudent";
+            this.btnInRoomStudent.Size = new System.Drawing.Size(215, 40);
+            this.btnInRoomStudent.TabIndex = 50;
+            this.btnInRoomStudent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnInRoomStudent.Click += new System.EventHandler(this.btnInRoomStudent_Click);
             // 
             // checkBoxReceiveRoom
             // 
@@ -332,9 +333,6 @@ namespace DormitoryManagementSoftware
             this.cbxNameRoom.ItemHeight = 26;
             this.cbxNameRoom.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.cbxNameRoom.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.cbxNameRoom.Items.AddRange(new object[] {
-            "abc",
-            "def"});
             this.cbxNameRoom.ItemTopMargin = 3;
             this.cbxNameRoom.Location = new System.Drawing.Point(10, 103);
             this.cbxNameRoom.Name = "cbxNameRoom";
@@ -1007,7 +1005,7 @@ namespace DormitoryManagementSoftware
             this.dataGridViewRoomContract.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -1198,7 +1196,7 @@ namespace DormitoryManagementSoftware
         private System.Windows.Forms.Label label25;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbIdCard;
         private System.Windows.Forms.Label label26;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnInRoomStudent;
         private Bunifu.UI.WinForms.BunifuDropdown cbxNameRoom;
         private System.Windows.Forms.GroupBox groupBox3;
         private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;

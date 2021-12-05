@@ -197,5 +197,12 @@ namespace DormitoryManagementSoftware
                 ChangeText(row);
             }
         }
+
+        private void btnInRoomStudent_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(comboboxID.Text);
+            fInRoomStudent f = new fInRoomStudent(id);
+            f.ShowDialog();
+        }
     }
 }

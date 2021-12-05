@@ -117,47 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="dormitory" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dormitory.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnClose.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAK8AAAAoCAYAAACIJ6oVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIWSURBVHhe7dxNS1RRGMDxvlMwUZkvBYK0DNq5CDe5EseX
+        GYOJICoCCQNF/ACKrmzTJggMQYI2YRtBCCEXMm7OOfcDPJ1z78Wc5snd5Hngv/ht5p45s/lzOecy595w
+        zglgEfHCLOKFWcQLs4gXZhEvzLo63vOuuP1dCWvTEt48lrB0X8LMTWBwUmOxNb8yJX5vR9zZqd5m9O94
+        v32S0B6TonVPvPYjwKAtDElojYj/vKk22h9vLN2vz8RwR/QJgf+tNSxheVLcr589rfbGG8MNzyckNG/p
+        kwDXKbbpTo70eMs7LuEiZ3E93B9vucZlqYC8FQt3xe2+vxTvebfcnGmDgey0R8UdH1bxpkcS5c5OGwhk
+        xs82JGy/ruNdmVIHATkqH92+eFjFGzrj6iAgW81GHe/8HX0AkLEqXuUCkDvihVnEC7OIF2YRL8wiXphF
+        vDCrirfZUC8COavi5XgPDKriXZ5ULwLZ6oxX8boPq1LM3dYHARnyG7N1vCdH/BEddiwOi//6sY438jtv
+        44f8pxd58+mY2urTv44BpdMUrx6pXwCy8ezBxbsc/sSbHB9KscRxIOSpaI+K//7lotfeeJMfB+URY88G
+        DrmYi0uFeMe9HG7SH2+SlhBbL6VosYnD9UnHfco3Nr17or72SY+3lkpPjyRCnECbHBiYdLpnbbp8V57W
+        ZnJlvEDOiBdmES/MIl6YRbwwyslvLVdSQW8pcBAAAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="N_Campus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\N_Campus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="analytics" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\analytics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo_KTX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_KTX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="book" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="team" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\team.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="contract" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\contract.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="graduated" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\graduated.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo_UEH" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_UEH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnCreateBill.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAK8AAAAoCAYAAACIJ6oVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIrSURBVHhe7dw9a1NxFMfxDi0KpZWqiyA4Ozg6iZPgJPgS
+        xFabh0ZJo1Ktg/iA+IBUQToppUgVoW6CUFEQQaGISLc6KOpgoUvewdFfrkZDjt1az4Hv8JnuP8nyJbn3
+        n3tuT7PZNCAj4kVaxIu0iBdpES/SIl6ktWa8K6urdv/lKzt4/bbtmbxs26qnredIBVg3akyt7b9y06YX
+        XtiX7ytum/LPeOffLtpQ5ZQNlMbdDwHWW/9o3baUG3bn2YLbaFe8Kv3Qrbs/X0S0iGGw1LC9F67a8tdv
+        Ha12xKtwd9bPWd9wzX0T4H9Sm0ufPvvx6huXcBGZzoe74tU5LqcKiK7/eN0mHs3/iVe7Cro48xYD0QxV
+        Gra4/LGIV1sSurLzFgLR9A6PWXVmrohXe2reIiCqXY3JIt4dJyfcBUBUvUdrRbybj51wFwChKV73ABAd
+        8SIt4kVaxIu0iBdpES/SIl6kpXhbG77eQSAyxct4D1JSvLpL3T0IBNW6pUHxnn/8xDaN8Bcxsijb4anp
+        Il6NVmjQzV8IxDJYGre512+KeKU2+5B7ehGextQOXJvqHAPSNMXusxfdFwBRbB87036WQzte0WjF1irj
+        QIhJo2pP371v99oRrzz/sNQaMeYeX0TRN1JrfeP+Ha50xSs6hRi99+DXRVy5682AjaInNu27dMN97JMb
+        728qXVsSAyUu5LCx9MuvZ+TpWXlem7JmvEBkxIu0iBdpES/SIl4k1bQfh0XtpMNF/PkAAAAASUVORK5C
+        YII=
+</value>
   </data>
 </root>

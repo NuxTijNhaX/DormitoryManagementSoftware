@@ -103,6 +103,18 @@ namespace DormitoryManagementSoftware
         {
             ContractDAO.Instance.UpdateStatusPeople(idRoom);
         }
+
+        private void LoadRoomInfo()
+        {
+            DataRow row = RoomDAO.Instance.LoadSpecRoomByNameRoom(cbxNameRoom.Text);
+
+            txbStatusPeople.Text = row["STATUSPEOPLE"].ToString();
+            txbAmountPeople.Text = row["LIMITPERSON"].ToString();
+            int price = (int)row["Price"];
+            txbPrice.Text = price.ToString("C0", CultureInfo.CreateSpecificCulture("vi-VN"));
+
+            idRoom = (int)row["ID"];
+        }
         
         #endregion
 
@@ -123,14 +135,7 @@ namespace DormitoryManagementSoftware
         {
             if (cbxNameRoom.Text == "System.Data.DataRowView") return;
 
-            DataRow row = RoomDAO.Instance.LoadSpecRoomByNameRoom(cbxNameRoom.Text);
-
-            txbStatusPeople.Text = row["STATUSPEOPLE"].ToString();
-            txbAmountPeople.Text = row["LIMITPERSON"].ToString();
-            int price = (int)row["Price"];
-            txbPrice.Text = price.ToString("C0", CultureInfo.CreateSpecificCulture("vi-VN"));
-
-            idRoom = (int)row["ID"];
+            LoadRoomInfo();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -162,15 +167,15 @@ namespace DormitoryManagementSoftware
                 return;
             }
 
-            if (dpkDateCheckIn.Value < DateTime.Now)
-            {
-                MessageBox.Show("Ngày Không Hợp Lệ\nVui Lòng Chọn Ngày Khác", "Thông Báo", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+            //if (dpkDateCheckIn.Value < DateTime.Now)
+            //{
+            //    MessageBox.Show("Ngày Không Hợp Lệ\nVui Lòng Chọn Ngày Khác", "Thông Báo", MessageBoxButtons.OK,
+            //        MessageBoxIcon.Information);
 
-                dpkDateCheckIn.Value = DateTime.Now;
+            //    dpkDateCheckIn.Value = DateTime.Now;
 
-                return;
-            }
+            //    return;
+            //}
 
             if (CreateContract(dpkDateCheckIn.Value, dpkDateCheckOut.Value, DateTime.Now))
             {
@@ -178,6 +183,8 @@ namespace DormitoryManagementSoftware
                     MessageBoxIcon.Information);
 
                 UpdateStatusPeople(idRoom);
+                LoadContract(GetContract());
+                LoadRoomInfo();
             }
             else
             {
@@ -199,7 +206,13 @@ namespace DormitoryManagementSoftware
         {
             dpkDateCheckOut.Value = dpkDateCheckIn.Value.AddMonths(6);
         }
-        
+
+        private void btnInRoomStudent_Click(object sender, EventArgs e)
+        {
+            fInRoomStudent f = new fInRoomStudent(idRoom);
+            f.ShowDialog();
+        }
+
         #endregion
     }
 }

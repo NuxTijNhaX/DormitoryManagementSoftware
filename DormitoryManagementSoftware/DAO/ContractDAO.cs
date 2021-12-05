@@ -55,5 +55,19 @@ namespace DormitoryManagementSoftware.DAO
 
             return DataProvider.Instance.ExecuteQuery(query, new object[] {mssv, creatingTime}).Rows[0];
         }
+
+        public DataTable LoadInRoomStudent(int idRoom)
+        {
+            string query = $"SELECT B.MSSV, B.Name, B.PhoneNumber, B.Sex FROM ROOMCONTRACT A, STUDENT B WHERE A.IDSTUDENT = B.ID AND A.IDROOM = {idRoom};";
+
+            return DataProvider.Instance.ExecuteQuery(query);
+        }
+
+        public DataTable LoadInRoomStudentByRoomName(string roomName)
+        {
+            string query = $"SELECT B.Name FROM ROOMCONTRACT A, STUDENT B, ROOM C WHERE A.IDSTUDENT = B.ID AND A.IDROOM = C.ID AND C.NAME = N'{roomName}';";
+
+            return DataProvider.Instance.ExecuteQuery(query);
+        }
     }
 }

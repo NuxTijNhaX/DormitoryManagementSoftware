@@ -34,5 +34,12 @@ namespace DormitoryManagementSoftware.DAO
 
             return DataProvider.Instance.ExecuteQuery(query);
         }
+
+        public DataRow LoadPriceByRoomType(string name)
+        {
+            string query = $"SELECT PRICE FROM ROOMTYPE WHERE NAME = N'{name}';";
+
+            return DataProvider.Instance.ExecuteQuery(query).Rows[0];
+        }
     }
 }
