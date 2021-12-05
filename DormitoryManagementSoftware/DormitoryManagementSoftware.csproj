@@ -150,6 +150,7 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\AccountTypeDAO.cs" />
+    <Compile Include="DAO\AccessDAO.cs" />
     <Compile Include="DAO\BillDAO.cs" />
     <Compile Include="DAO\BillTypeDAO.cs" />
     <Compile Include="DAO\ContractDAO.cs" />

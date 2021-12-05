@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DormitoryManagementSoftware.DAO;
 
 namespace DormitoryManagementSoftware
 {
@@ -21,14 +22,9 @@ namespace DormitoryManagementSoftware
 
         #region Methods
 
-        public bool IsAdmin()
-        {
-            return true;
-        }
-
         private bool CheckAccess(string nameform)
         {
-            return true; //AccessDAO.Instance.CheckAccess(userName, nameform);
+            return AccessDAO.Instance.CheckAccess(userName, nameform);
         }
 
         void AlertIllegalAccess()
@@ -38,18 +34,7 @@ namespace DormitoryManagementSoftware
 
         #endregion
 
-        private void btn(object sender, EventArgs e)
-        {
-            this.Hide();
-            fLogin login = new fLogin();
-            login.ShowDialog();
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                Application.Exit();
-        }
+        #region Events
 
         // Logout Button
         private void Logout()
@@ -121,8 +106,18 @@ namespace DormitoryManagementSoftware
         // Open ManageStudent Form
         private void ManageStudent()
         {
-            fStudent f = new fStudent();
-            f.ShowDialog();
+            if (CheckAccess("fStudent"))
+            {
+                Hide();
+                fStudent f = new fStudent();
+                f.ShowDialog();
+                Show();
+            }
+            else
+            {
+                AlertIllegalAccess();
+            }
+
         }
 
         private void btnManageStudent_Click(object sender, EventArgs e)
@@ -138,8 +133,17 @@ namespace DormitoryManagementSoftware
         // Open ManageStaff Form
         private void ManageStaff()
         {
-            fStaff f = new fStaff();
-            f.ShowDialog();
+            if (CheckAccess("fStaff"))
+            {
+                Hide();
+                fStaff f = new fStaff();
+                f.ShowDialog();
+                Show();
+            }
+            else
+            {
+                AlertIllegalAccess();
+            }
         }
 
         private void btnManageStaff_Click(object sender, EventArgs e)
@@ -155,8 +159,17 @@ namespace DormitoryManagementSoftware
         // Open ManageRoom Form
         private void ManageRoom()
         {
-            fRoom f = new fRoom();
-            f.ShowDialog();
+            if (CheckAccess("fRoom"))
+            {
+                Hide();
+                fRoom f = new fRoom();
+                f.ShowDialog();
+                Show();
+            }
+            else
+            {
+                AlertIllegalAccess();
+            }
         }
 
         private void btnManageRoom_Click(object sender, EventArgs e)
@@ -172,34 +185,72 @@ namespace DormitoryManagementSoftware
         // Open MakeContract Form
         private void btnMakeContract_Click(object sender, EventArgs e)
         {
-            fRoomContract f = new fRoomContract(userName);
-            f.ShowDialog();
+            if (CheckAccess("fRoomContract"))
+            {
+                Hide();
+                fRoomContract f = new fRoomContract(userName);
+                f.ShowDialog();
+                Show();
+            }
+            else
+            {
+                AlertIllegalAccess();
+            }
         }
 
         // Open ManageRules Form
         private void btnImgManageRules_Click(object sender, EventArgs e)
         {
-            fRules f = new fRules();
-            f.ShowDialog();
+            if (CheckAccess("fRules"))
+            {
+                Hide();
+                fRules f = new fRules();
+                f.ShowDialog();
+                Show();
+            }
+            else
+            {
+                AlertIllegalAccess();
+            }
         }
 
         // Open CreateReports Form
         private void btnImgCreateReports_Click(object sender, EventArgs e)
         {
-            fReport f = new fReport();
-            f.ShowDialog();
+            if (CheckAccess("fReport"))
+            {
+                Hide();
+                fReport f = new fReport();
+                f.ShowDialog();
+                Show();
+            }
+            else
+            {
+                AlertIllegalAccess();
+            }
         }
 
         // Open ManageBills Form
         private void btnImgManageBills_Click(object sender, EventArgs e)
         {
-            fBill f = new fBill();
-            f.ShowDialog();
+            if (CheckAccess("fBill"))
+            {
+                Hide();
+                fBill f = new fBill();
+                f.ShowDialog();
+                Show();
+            }
+            else
+            {
+                AlertIllegalAccess();
+            }
         }
 
         private void btnManageBills_Click(object sender, EventArgs e)
         {
             btnImgManageBills_Click(sender, e);
         }
+
+        #endregion
     }
 }
