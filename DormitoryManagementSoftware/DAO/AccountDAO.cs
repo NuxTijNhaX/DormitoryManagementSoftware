@@ -111,5 +111,12 @@ namespace DormitoryManagementSoftware.DAO
 
             return DataProvider.Instance.ExecuteNonQuery(query) > 0;
         }
+
+        public DataTable GetSearchStaff(string str)
+        {
+            string query = "USP_SearchStaff @string";
+
+            return DataProvider.Instance.ExecuteQuery(query, new object[] {str});
+        }
     }
 }

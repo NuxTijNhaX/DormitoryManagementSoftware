@@ -31,6 +31,16 @@ namespace DormitoryManagementSoftware
             return BillDAO.Instance.GetFullBill();
         }
 
+        private DataTable GetBillByStatus()
+        {
+            return BillDAO.Instance.GetBillByStatus(cbxSearchBy.Text);
+        }
+
+        private void Search()
+        {
+            LoadFullBill(GetBillByStatus());
+        }
+
         private void btnCLose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -63,6 +73,8 @@ namespace DormitoryManagementSoftware
             {
                 if (BillDAO.Instance.AddStudentPayBill(idBill, idStudent))
                 {
+                    LoadFullBill(GetFullBill());
+
                     MessageBox.Show($"Thanh Toán Thành Công", "Thông Báo",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -76,7 +88,23 @@ namespace DormitoryManagementSoftware
 
         private void btnBillDetail_Click(object sender, EventArgs e)
         {
+            fBillDetails f = new fBillDetails();
+            f.ShowDialog();
+        }
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            btnSearch.Visible = false;
+            btnCancel.Visible = true;
+            Search();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            LoadFullBill(GetFullBill());
+
+            btnCancel.Visible = false;
+            btnSearch.Visible = true;
         }
     }
 }

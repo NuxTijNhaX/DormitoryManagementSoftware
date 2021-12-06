@@ -200,7 +200,7 @@ namespace DormitoryManagementSoftware
             this.Controls.Add(this.btnClose);
             this.Name = "fInRoomStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fInRoomStudent";
+            this.Text = "Sinh Viên Đang Ở";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInRoomStudent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

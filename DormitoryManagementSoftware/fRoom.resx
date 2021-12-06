@@ -161,27 +161,6 @@
         8l/FYwIYQ4UGBWBgAAC+0b+zuQxOnAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="colIDRoom.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colNameRoomType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colPrice.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colStatus.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colLimitPerson.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colIdRoomType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="btnCLose.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAK8AAAAoCAYAAACIJ6oVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -196,21 +175,23 @@
         Hy8Jxx4IAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnAddRoom.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnInRoomStudent.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAK8AAAAoCAYAAACIJ6oVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHPSURBVHhe7dxNK0RhFMBxC4WU95RSPoGtna2ttZXkbYYh
-        JkxmwYKSlJeShNJEbGbBQkJslZXsWBAWpmYz3+Bwnika91nznPovfpu5p7v6d3u6zbllhUJBAIuIF2YR
-        L8wiXphFvDCLeGGWN95cPi9bl9fSv5OR9vSClPXGgT+n7fVs7srq2YW8fuQinUbivbp/kNaJWakemvDe
-        EPhrVQPj0jQ6Ldnbu5JWS+Kdy55IbWzSewPgv2mb8f3DaLz6xCVchK4ulpTtq5ufePWM25yY8Q4DoWkY
-        mZLHt/divEunZ1LRP+YdBEKkLxNcvN1rW18/xCIDQKjcWzCNty2Z9g4Aoaoc+DopuIOv5yIQPOKFWcQL
-        s4gXZhEvzCJemEW8MIt4YRbxwizihVnEC7OIF2YRL8zSeBtHpvwXgUCV9yWK8XYurngHgFC5v/FqvPPZ
-        k2LJniEgRLoS7+J9eH6R2ljSOwSERheFdWHYxas2zi+lZpiAETb9nkgic1S6+q707Fs9yMdGECZd/emY
-        X3Lb7pF4Veo4K/VxfQKzkIlw6FFhaO/gO1wViVfdPT65jWIWM/HfWsZT0rW87s64vzv1xgtYQLwwi3hh
-        FvHCLOKFUQX5BM77maJOESUFAAAAAElFTkSuQmCC
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIrSURBVHhe7dw9a1NxFMfxDi0KpZWqiyA4Ozg6iZPgJPgS
+        xFabh0ZJo1Ktg/iA+IBUQToppUgVoW6CUFEQQaGISLc6KOpgoUvewdFfrkZDjt1az4Hv8JnuP8nyJbn3
+        n3tuT7PZNCAj4kVaxIu0iBdpES/SIl6ktWa8K6urdv/lKzt4/bbtmbxs26qnredIBVg3akyt7b9y06YX
+        XtiX7ytum/LPeOffLtpQ5ZQNlMbdDwHWW/9o3baUG3bn2YLbaFe8Kv3Qrbs/X0S0iGGw1LC9F67a8tdv
+        Ha12xKtwd9bPWd9wzX0T4H9Sm0ufPvvx6huXcBGZzoe74tU5LqcKiK7/eN0mHs3/iVe7Cro48xYD0QxV
+        Gra4/LGIV1sSurLzFgLR9A6PWXVmrohXe2reIiCqXY3JIt4dJyfcBUBUvUdrRbybj51wFwChKV73ABAd
+        8SIt4kVaxIu0iBdpES/SIl6kpXhbG77eQSAyxct4D1JSvLpL3T0IBNW6pUHxnn/8xDaN8Bcxsijb4anp
+        Il6NVmjQzV8IxDJYGre512+KeKU2+5B7ehGextQOXJvqHAPSNMXusxfdFwBRbB87036WQzte0WjF1irj
+        QIhJo2pP371v99oRrzz/sNQaMeYeX0TRN1JrfeP+Ha50xSs6hRi99+DXRVy5682AjaInNu27dMN97JMb
+        728qXVsSAyUu5LCx9MuvZ+TpWXlem7JmvEBkxIu0iBdpES/SIl4k1bQfh0XtpMNF/PkAAAAASUVORK5C
+        YII=
 </value>
   </data>
-  <data name="btnRoomType.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAddRoom.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAK8AAAAoCAYAAACIJ6oVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHPSURBVHhe7dxNK0RhFMBxC4WU95RSPoGtna2ttZXkbYYh
@@ -270,22 +251,27 @@
         LPFiWIkXw0q8GFbixaB27B/JF510cObrigAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnInRoomStudent.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAK8AAAAoCAYAAACIJ6oVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIrSURBVHhe7dw9a1NxFMfxDi0KpZWqiyA4Ozg6iZPgJPgS
-        xFabh0ZJo1Ktg/iA+IBUQToppUgVoW6CUFEQQaGISLc6KOpgoUvewdFfrkZDjt1az4Hv8JnuP8nyJbn3
-        n3tuT7PZNCAj4kVaxIu0iBdpES/SIl6ktWa8K6urdv/lKzt4/bbtmbxs26qnredIBVg3akyt7b9y06YX
-        XtiX7ytum/LPeOffLtpQ5ZQNlMbdDwHWW/9o3baUG3bn2YLbaFe8Kv3Qrbs/X0S0iGGw1LC9F67a8tdv
-        Ha12xKtwd9bPWd9wzX0T4H9Sm0ufPvvx6huXcBGZzoe74tU5LqcKiK7/eN0mHs3/iVe7Cro48xYD0QxV
-        Gra4/LGIV1sSurLzFgLR9A6PWXVmrohXe2reIiCqXY3JIt4dJyfcBUBUvUdrRbybj51wFwChKV73ABAd
-        8SIt4kVaxIu0iBdpES/SIl6kpXhbG77eQSAyxct4D1JSvLpL3T0IBNW6pUHxnn/8xDaN8Bcxsijb4anp
-        Il6NVmjQzV8IxDJYGre512+KeKU2+5B7ehGextQOXJvqHAPSNMXusxfdFwBRbB87036WQzte0WjF1irj
-        QIhJo2pP371v99oRrzz/sNQaMeYeX0TRN1JrfeP+Ha50xSs6hRi99+DXRVy5682AjaInNu27dMN97JMb
-        728qXVsSAyUu5LCx9MuvZ+TpWXlem7JmvEBkxIu0iBdpES/SIl4k1bQfh0XtpMNF/PkAAAAASUVORK5C
-        YII=
-</value>
-  </data>
+  <metadata name="colIDRoom.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colNameRoomType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colPrice.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colStatus.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colLimitPerson.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colIdRoomType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>41</value>
   </metadata>

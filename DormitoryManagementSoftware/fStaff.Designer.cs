@@ -30,10 +30,10 @@ namespace DormitoryManagementSoftware
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fStaff));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.datePickerStartDay = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label16 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -55,6 +55,7 @@ namespace DormitoryManagementSoftware
             this.groupStaff = new System.Windows.Forms.GroupBox();
             this.comboBoxStaffType = new Bunifu.UI.WinForms.BunifuDropdown();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnDeleteStaff = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnClose = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnInsert = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -87,7 +88,6 @@ namespace DormitoryManagementSoftware
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnDeleteStaff = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox2.SuspendLayout();
             this.groupStaff.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -474,6 +474,33 @@ namespace DormitoryManagementSoftware
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Chức Năng";
             // 
+            // btnDeleteStaff
+            // 
+            this.btnDeleteStaff.ActiveBorderThickness = 1;
+            this.btnDeleteStaff.ActiveCornerRadius = 20;
+            this.btnDeleteStaff.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnDeleteStaff.ActiveForecolor = System.Drawing.Color.White;
+            this.btnDeleteStaff.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnDeleteStaff.BackColor = System.Drawing.SystemColors.Control;
+            this.btnDeleteStaff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteStaff.BackgroundImage")));
+            this.btnDeleteStaff.ButtonText = "Xóa Nhân Viên";
+            this.btnDeleteStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeleteStaff.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteStaff.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteStaff.IdleBorderThickness = 1;
+            this.btnDeleteStaff.IdleCornerRadius = 20;
+            this.btnDeleteStaff.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnDeleteStaff.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDeleteStaff.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnDeleteStaff.Location = new System.Drawing.Point(27, 67);
+            this.btnDeleteStaff.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDeleteStaff.Name = "btnDeleteStaff";
+            this.btnDeleteStaff.Size = new System.Drawing.Size(175, 40);
+            this.btnDeleteStaff.TabIndex = 54;
+            this.btnDeleteStaff.TabStop = false;
+            this.btnDeleteStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDeleteStaff.Click += new System.EventHandler(this.btnDeleteStaff_Click);
+            // 
             // btnClose
             // 
             this.btnClose.ActiveBorderThickness = 1;
@@ -600,11 +627,11 @@ namespace DormitoryManagementSoftware
             // 
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.label5.Location = new System.Drawing.Point(15, 24);
+            this.label5.Location = new System.Drawing.Point(8, 30);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 47);
+            this.label5.Size = new System.Drawing.Size(199, 27);
             this.label5.TabIndex = 28;
-            this.label5.Text = "Tài khoản/ Tên/ CMND/ SĐT:";
+            this.label5.Text = "Nhập tên:";
             // 
             // txbSearch
             // 
@@ -617,7 +644,7 @@ namespace DormitoryManagementSoftware
             this.txbSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbSearch.isPassword = false;
-            this.txbSearch.Location = new System.Drawing.Point(7, 71);
+            this.txbSearch.Location = new System.Drawing.Point(7, 62);
             this.txbSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txbSearch.MaxLength = 32767;
             this.txbSearch.Name = "txbSearch";
@@ -643,7 +670,7 @@ namespace DormitoryManagementSoftware
             this.btnSearch.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
             this.btnSearch.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnSearch.Location = new System.Drawing.Point(26, 102);
+            this.btnSearch.Location = new System.Drawing.Point(24, 99);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(175, 40);
@@ -669,13 +696,14 @@ namespace DormitoryManagementSoftware
             this.btnCancel.IdleFillColor = System.Drawing.Color.White;
             this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
             this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(26, 105);
+            this.btnCancel.Location = new System.Drawing.Point(24, 100);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(175, 40);
             this.btnCancel.TabIndex = 48;
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancel.Visible = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // groupBox1
             // 
@@ -697,14 +725,14 @@ namespace DormitoryManagementSoftware
             this.dataGridStaff.AllowUserToResizeRows = false;
             this.dataGridStaff.BackgroundColor = System.Drawing.Color.White;
             this.dataGridStaff.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridStaff.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridStaff.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridStaff.ColumnHeadersHeight = 29;
             this.dataGridStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridStaff.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -718,27 +746,27 @@ namespace DormitoryManagementSoftware
             this.colStartDay,
             this.colAddress,
             this.colIDStaffType});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridStaff.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridStaff.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridStaff.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridStaff.GridColor = System.Drawing.Color.White;
             this.dataGridStaff.Location = new System.Drawing.Point(3, 68);
             this.dataGridStaff.Name = "dataGridStaff";
             this.dataGridStaff.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridStaff.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridStaff.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridStaff.RowHeadersVisible = false;
             this.dataGridStaff.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridStaff.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -939,33 +967,6 @@ namespace DormitoryManagementSoftware
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 43);
-            // 
-            // btnDeleteStaff
-            // 
-            this.btnDeleteStaff.ActiveBorderThickness = 1;
-            this.btnDeleteStaff.ActiveCornerRadius = 20;
-            this.btnDeleteStaff.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnDeleteStaff.ActiveForecolor = System.Drawing.Color.White;
-            this.btnDeleteStaff.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnDeleteStaff.BackColor = System.Drawing.SystemColors.Control;
-            this.btnDeleteStaff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteStaff.BackgroundImage")));
-            this.btnDeleteStaff.ButtonText = "Xóa Nhân Viên";
-            this.btnDeleteStaff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeleteStaff.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteStaff.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteStaff.IdleBorderThickness = 1;
-            this.btnDeleteStaff.IdleCornerRadius = 20;
-            this.btnDeleteStaff.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnDeleteStaff.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDeleteStaff.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnDeleteStaff.Location = new System.Drawing.Point(27, 67);
-            this.btnDeleteStaff.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDeleteStaff.Name = "btnDeleteStaff";
-            this.btnDeleteStaff.Size = new System.Drawing.Size(175, 40);
-            this.btnDeleteStaff.TabIndex = 54;
-            this.btnDeleteStaff.TabStop = false;
-            this.btnDeleteStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDeleteStaff.Click += new System.EventHandler(this.btnDeleteStaff_Click);
             // 
             // fStaff
             // 

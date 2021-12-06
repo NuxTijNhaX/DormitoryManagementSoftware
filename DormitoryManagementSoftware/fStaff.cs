@@ -55,6 +55,10 @@ namespace DormitoryManagementSoftware
         }
         // ----
 
+        private DataTable GetSearchStaff(string str)
+        {
+            return AccountDAO.Instance.GetSearchStaff(str);
+        }
 
         private void ChangeText(DataGridViewRow row)
         {
@@ -156,6 +160,9 @@ namespace DormitoryManagementSoftware
         private void Search()
         {
             // LoadFullStaff(GetSearchStaff());
+            string @string = txbSearch.Text;
+            // int mode = cbxSearchBy.SelectedIndex;
+            LoadFullStaff(GetSearchStaff(@string));
         }
 
         private Account GetStaffNow()
@@ -244,23 +251,19 @@ namespace DormitoryManagementSoftware
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            txbSearch.Text = txbSearch.Text.Trim();
+            if (txbSearch.Text != string.Empty)
+            {
+                //txbUserName.Text = string.Empty;
+                //txbName.Text = string.Empty;
+                //txbIDcard.Text = string.Empty;
+                //txbPhoneNumber.Text = string.Empty;
+                //txbAddress.Text = string.Empty;
 
-            MessageBox.Show("Chức Năng Đang Được Bảo Trì\nVui Lòng Thông Cảm!", "Thông Báo", MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
-
-            //txbSearch.Text = txbSearch.Text.Trim();
-            //if (txbSearch.Text != string.Empty)
-            //{
-            //    txbUserName.Text = string.Empty;
-            //    txbName.Text = string.Empty;
-            //    txbIDcard.Text = string.Empty;
-            //    txbPhoneNumber.Text = string.Empty;
-            //    txbAddress.Text = string.Empty;
-
-            //    btnSearch.Visible = false;
-            //    btnCancel.Visible = true;
-            //    Search();
-            //}
+                btnSearch.Visible = false;
+                btnCancel.Visible = true;
+                Search();
+            }
         }
 
         private void btnDeleteStaff_Click(object sender, EventArgs e)
@@ -282,6 +285,14 @@ namespace DormitoryManagementSoftware
                     MessageBox.Show("Xóa Không Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            LoadFullStaff(GetFullStaff());
+
+            btnCancel.Visible = false;
+            btnSearch.Visible = true;
         }
     }
 }

@@ -30,21 +30,31 @@ namespace DormitoryManagementSoftware
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fRoom));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bindingRoom = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnCLose = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnInRoomStudent = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnAddRoom = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.labelName = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label5 = new System.Windows.Forms.Label();
             this.txbSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupRoom = new System.Windows.Forms.GroupBox();
             this.txbStatusPeople = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.comboboxID = new Bunifu.UI.WinForms.BunifuDropdown();
@@ -67,17 +77,6 @@ namespace DormitoryManagementSoftware
             this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLimitPerson = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colIdRoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnCLose = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnAddRoom = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnRoomType = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.btnInRoomStudent = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.bindingRoom)).BeginInit();
             this.bindingRoom.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -124,6 +123,26 @@ namespace DormitoryManagementSoftware
             this.bindingNavigatorCountItem.Text = "của {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.AutoSize = false;
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.AutoSize = false;
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
@@ -143,6 +162,26 @@ namespace DormitoryManagementSoftware
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 43);
             // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.AutoSize = false;
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.AutoSize = false;
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
@@ -160,17 +199,123 @@ namespace DormitoryManagementSoftware
             this.groupBox4.Controls.Add(this.btnCLose);
             this.groupBox4.Controls.Add(this.btnInRoomStudent);
             this.groupBox4.Controls.Add(this.btnAddRoom);
-            this.groupBox4.Controls.Add(this.btnRoomType);
             this.groupBox4.Controls.Add(this.btnUpdate);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
             this.groupBox4.Location = new System.Drawing.Point(6, 347);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(444, 145);
+            this.groupBox4.Size = new System.Drawing.Size(444, 121);
             this.groupBox4.TabIndex = 65;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Chức năng";
+            // 
+            // btnCLose
+            // 
+            this.btnCLose.ActiveBorderThickness = 1;
+            this.btnCLose.ActiveCornerRadius = 20;
+            this.btnCLose.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(158)))), ((int)(((byte)(75)))));
+            this.btnCLose.ActiveForecolor = System.Drawing.Color.White;
+            this.btnCLose.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(158)))), ((int)(((byte)(75)))));
+            this.btnCLose.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCLose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCLose.BackgroundImage")));
+            this.btnCLose.ButtonText = "Đóng";
+            this.btnCLose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCLose.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCLose.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCLose.IdleBorderThickness = 1;
+            this.btnCLose.IdleCornerRadius = 15;
+            this.btnCLose.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnCLose.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCLose.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnCLose.Location = new System.Drawing.Point(239, 72);
+            this.btnCLose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCLose.Name = "btnCLose";
+            this.btnCLose.Size = new System.Drawing.Size(175, 40);
+            this.btnCLose.TabIndex = 12;
+            this.btnCLose.TabStop = false;
+            this.btnCLose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCLose.Click += new System.EventHandler(this.btnCLose_Click);
+            // 
+            // btnInRoomStudent
+            // 
+            this.btnInRoomStudent.ActiveBorderThickness = 1;
+            this.btnInRoomStudent.ActiveCornerRadius = 20;
+            this.btnInRoomStudent.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnInRoomStudent.ActiveForecolor = System.Drawing.Color.White;
+            this.btnInRoomStudent.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnInRoomStudent.BackColor = System.Drawing.SystemColors.Control;
+            this.btnInRoomStudent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInRoomStudent.BackgroundImage")));
+            this.btnInRoomStudent.ButtonText = "Sinh Viên Đang Ở";
+            this.btnInRoomStudent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInRoomStudent.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInRoomStudent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnInRoomStudent.IdleBorderThickness = 1;
+            this.btnInRoomStudent.IdleCornerRadius = 20;
+            this.btnInRoomStudent.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnInRoomStudent.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnInRoomStudent.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnInRoomStudent.Location = new System.Drawing.Point(26, 70);
+            this.btnInRoomStudent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnInRoomStudent.Name = "btnInRoomStudent";
+            this.btnInRoomStudent.Size = new System.Drawing.Size(175, 40);
+            this.btnInRoomStudent.TabIndex = 11;
+            this.btnInRoomStudent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnInRoomStudent.Click += new System.EventHandler(this.btnInRoomStudent_Click);
+            // 
+            // btnAddRoom
+            // 
+            this.btnAddRoom.ActiveBorderThickness = 1;
+            this.btnAddRoom.ActiveCornerRadius = 20;
+            this.btnAddRoom.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnAddRoom.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAddRoom.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnAddRoom.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAddRoom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddRoom.BackgroundImage")));
+            this.btnAddRoom.ButtonText = "Thêm Phòng";
+            this.btnAddRoom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnAddRoom.IdleBorderThickness = 1;
+            this.btnAddRoom.IdleCornerRadius = 15;
+            this.btnAddRoom.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnAddRoom.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddRoom.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnAddRoom.Location = new System.Drawing.Point(26, 24);
+            this.btnAddRoom.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddRoom.Name = "btnAddRoom";
+            this.btnAddRoom.Size = new System.Drawing.Size(175, 40);
+            this.btnAddRoom.TabIndex = 9;
+            this.btnAddRoom.TabStop = false;
+            this.btnAddRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddRoom.Click += new System.EventHandler(this.btnAddRoom_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.ActiveBorderThickness = 1;
+            this.btnUpdate.ActiveCornerRadius = 20;
+            this.btnUpdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
+            this.btnUpdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.Control;
+            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
+            this.btnUpdate.ButtonText = "Cập Nhật Phòng";
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnUpdate.IdleBorderThickness = 1;
+            this.btnUpdate.IdleCornerRadius = 15;
+            this.btnUpdate.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnUpdate.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnUpdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnUpdate.Location = new System.Drawing.Point(239, 24);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(175, 40);
+            this.btnUpdate.TabIndex = 10;
+            this.btnUpdate.TabStop = false;
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // labelName
             // 
@@ -200,6 +345,32 @@ namespace DormitoryManagementSoftware
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm";
             // 
+            // btnSearch
+            // 
+            this.btnSearch.ActiveBorderThickness = 1;
+            this.btnSearch.ActiveCornerRadius = 20;
+            this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            this.btnSearch.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+            this.btnSearch.ButtonText = "Tìm Kiếm";
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnSearch.IdleBorderThickness = 1;
+            this.btnSearch.IdleCornerRadius = 20;
+            this.btnSearch.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnSearch.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.btnSearch.Location = new System.Drawing.Point(248, 38);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(175, 40);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -207,9 +378,9 @@ namespace DormitoryManagementSoftware
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
             this.label5.Location = new System.Drawing.Point(22, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 20);
+            this.label5.Size = new System.Drawing.Size(82, 20);
             this.label5.TabIndex = 28;
-            this.label5.Text = "Mã/ Tên phòng:";
+            this.label5.Text = "Tên phòng:";
             // 
             // txbSearch
             // 
@@ -226,9 +397,36 @@ namespace DormitoryManagementSoftware
             this.txbSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txbSearch.MaxLength = 32767;
             this.txbSearch.Name = "txbSearch";
-            this.txbSearch.Size = new System.Drawing.Size(175, 29);
-            this.txbSearch.TabIndex = 27;
+            this.txbSearch.Size = new System.Drawing.Size(202, 29);
+            this.txbSearch.TabIndex = 1;
             this.txbSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.ActiveBorderThickness = 1;
+            this.btnCancel.ActiveCornerRadius = 20;
+            this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
+            this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
+            this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnCancel.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+            this.btnCancel.ButtonText = "Huỷ Tìm";
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.IdleBorderThickness = 1;
+            this.btnCancel.IdleCornerRadius = 20;
+            this.btnCancel.IdleFillColor = System.Drawing.Color.White;
+            this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
+            this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
+            this.btnCancel.Location = new System.Drawing.Point(247, 38);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(175, 40);
+            this.btnCancel.TabIndex = 48;
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCancel.Visible = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // groupRoom
             // 
@@ -272,7 +470,7 @@ namespace DormitoryManagementSoftware
             this.txbStatusPeople.MaxLength = 32767;
             this.txbStatusPeople.Name = "txbStatusPeople";
             this.txbStatusPeople.Size = new System.Drawing.Size(175, 29);
-            this.txbStatusPeople.TabIndex = 48;
+            this.txbStatusPeople.TabIndex = 7;
             this.txbStatusPeople.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // comboboxID
@@ -316,7 +514,7 @@ namespace DormitoryManagementSoftware
             this.comboboxID.Location = new System.Drawing.Point(22, 44);
             this.comboboxID.Name = "comboboxID";
             this.comboboxID.Size = new System.Drawing.Size(175, 32);
-            this.comboboxID.TabIndex = 47;
+            this.comboboxID.TabIndex = 3;
             this.comboboxID.Text = null;
             this.comboboxID.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.comboboxID.TextLeftMargin = 5;
@@ -360,7 +558,7 @@ namespace DormitoryManagementSoftware
             this.comboBoxRoomType.Location = new System.Drawing.Point(225, 44);
             this.comboBoxRoomType.Name = "comboBoxRoomType";
             this.comboBoxRoomType.Size = new System.Drawing.Size(197, 32);
-            this.comboBoxRoomType.TabIndex = 46;
+            this.comboBoxRoomType.TabIndex = 4;
             this.comboBoxRoomType.Text = null;
             this.comboBoxRoomType.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.comboBoxRoomType.TextLeftMargin = 5;
@@ -416,7 +614,7 @@ namespace DormitoryManagementSoftware
             this.txbLimitPerson.MaxLength = 32767;
             this.txbLimitPerson.Name = "txbLimitPerson";
             this.txbLimitPerson.Size = new System.Drawing.Size(197, 29);
-            this.txbLimitPerson.TabIndex = 44;
+            this.txbLimitPerson.TabIndex = 8;
             this.txbLimitPerson.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label13
@@ -468,7 +666,7 @@ namespace DormitoryManagementSoftware
             this.txbNameRoom.MaxLength = 32767;
             this.txbNameRoom.Name = "txbNameRoom";
             this.txbNameRoom.Size = new System.Drawing.Size(175, 29);
-            this.txbNameRoom.TabIndex = 1;
+            this.txbNameRoom.TabIndex = 5;
             this.txbNameRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txbPrice
@@ -489,7 +687,7 @@ namespace DormitoryManagementSoftware
             this.txbPrice.MaxLength = 32767;
             this.txbPrice.Name = "txbPrice";
             this.txbPrice.Size = new System.Drawing.Size(197, 29);
-            this.txbPrice.TabIndex = 42;
+            this.txbPrice.TabIndex = 6;
             this.txbPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // groupBox1
@@ -500,7 +698,7 @@ namespace DormitoryManagementSoftware
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
             this.groupBox1.Location = new System.Drawing.Point(456, 50);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(652, 442);
+            this.groupBox1.Size = new System.Drawing.Size(652, 418);
             this.groupBox1.TabIndex = 62;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Phòng";
@@ -512,14 +710,14 @@ namespace DormitoryManagementSoftware
             this.dataGridViewRoom.AllowUserToResizeRows = false;
             this.dataGridViewRoom.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewRoom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewRoom.ColumnHeadersHeight = 29;
             this.dataGridViewRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewRoom.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -530,33 +728,33 @@ namespace DormitoryManagementSoftware
             this.colStatus,
             this.colLimitPerson,
             this.colIdRoomType});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewRoom.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewRoom.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewRoom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewRoom.GridColor = System.Drawing.Color.White;
             this.dataGridViewRoom.Location = new System.Drawing.Point(3, 68);
             this.dataGridViewRoom.Name = "dataGridViewRoom";
             this.dataGridViewRoom.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewRoom.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewRoom.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewRoom.RowHeadersVisible = false;
             this.dataGridViewRoom.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridViewRoom.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridViewRoom.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridViewRoom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewRoom.Size = new System.Drawing.Size(646, 371);
+            this.dataGridViewRoom.Size = new System.Drawing.Size(646, 347);
             this.dataGridViewRoom.TabIndex = 28;
             this.dataGridViewRoom.SelectionChanged += new System.EventHandler(this.dataGridViewRoom_SelectionChanged);
             // 
@@ -622,237 +820,11 @@ namespace DormitoryManagementSoftware
             this.colIdRoomType.ReadOnly = true;
             this.colIdRoomType.Visible = false;
             // 
-            // btnCLose
-            // 
-            this.btnCLose.ActiveBorderThickness = 1;
-            this.btnCLose.ActiveCornerRadius = 20;
-            this.btnCLose.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(158)))), ((int)(((byte)(75)))));
-            this.btnCLose.ActiveForecolor = System.Drawing.Color.White;
-            this.btnCLose.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(158)))), ((int)(((byte)(75)))));
-            this.btnCLose.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCLose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCLose.BackgroundImage")));
-            this.btnCLose.ButtonText = "Đóng";
-            this.btnCLose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCLose.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCLose.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnCLose.IdleBorderThickness = 1;
-            this.btnCLose.IdleCornerRadius = 15;
-            this.btnCLose.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnCLose.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCLose.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnCLose.Location = new System.Drawing.Point(134, 101);
-            this.btnCLose.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCLose.Name = "btnCLose";
-            this.btnCLose.Size = new System.Drawing.Size(175, 40);
-            this.btnCLose.TabIndex = 51;
-            this.btnCLose.TabStop = false;
-            this.btnCLose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnCLose.Click += new System.EventHandler(this.btnCLose_Click);
-            // 
-            // btnAddRoom
-            // 
-            this.btnAddRoom.ActiveBorderThickness = 1;
-            this.btnAddRoom.ActiveCornerRadius = 20;
-            this.btnAddRoom.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnAddRoom.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAddRoom.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnAddRoom.BackColor = System.Drawing.SystemColors.Control;
-            this.btnAddRoom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddRoom.BackgroundImage")));
-            this.btnAddRoom.ButtonText = "Thêm Phòng";
-            this.btnAddRoom.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnAddRoom.IdleBorderThickness = 1;
-            this.btnAddRoom.IdleCornerRadius = 15;
-            this.btnAddRoom.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnAddRoom.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddRoom.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnAddRoom.Location = new System.Drawing.Point(22, 23);
-            this.btnAddRoom.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAddRoom.Name = "btnAddRoom";
-            this.btnAddRoom.Size = new System.Drawing.Size(175, 40);
-            this.btnAddRoom.TabIndex = 8;
-            this.btnAddRoom.TabStop = false;
-            this.btnAddRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAddRoom.Click += new System.EventHandler(this.btnAddRoom_Click);
-            // 
-            // btnRoomType
-            // 
-            this.btnRoomType.ActiveBorderThickness = 1;
-            this.btnRoomType.ActiveCornerRadius = 20;
-            this.btnRoomType.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnRoomType.ActiveForecolor = System.Drawing.Color.White;
-            this.btnRoomType.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnRoomType.BackColor = System.Drawing.SystemColors.Control;
-            this.btnRoomType.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRoomType.BackgroundImage")));
-            this.btnRoomType.ButtonText = "Sửa Loại Phòng";
-            this.btnRoomType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRoomType.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRoomType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnRoomType.IdleBorderThickness = 1;
-            this.btnRoomType.IdleCornerRadius = 15;
-            this.btnRoomType.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnRoomType.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRoomType.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnRoomType.Location = new System.Drawing.Point(247, 23);
-            this.btnRoomType.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRoomType.Name = "btnRoomType";
-            this.btnRoomType.Size = new System.Drawing.Size(175, 40);
-            this.btnRoomType.TabIndex = 50;
-            this.btnRoomType.TabStop = false;
-            this.btnRoomType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRoomType.Click += new System.EventHandler(this.btnRoomType_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.ActiveBorderThickness = 1;
-            this.btnUpdate.ActiveCornerRadius = 20;
-            this.btnUpdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
-            this.btnUpdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnUpdate.BackColor = System.Drawing.SystemColors.Control;
-            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
-            this.btnUpdate.ButtonText = "Cập Nhật Phòng";
-            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnUpdate.IdleBorderThickness = 1;
-            this.btnUpdate.IdleCornerRadius = 15;
-            this.btnUpdate.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnUpdate.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUpdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnUpdate.Location = new System.Drawing.Point(22, 61);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(175, 40);
-            this.btnUpdate.TabIndex = 52;
-            this.btnUpdate.TabStop = false;
-            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.ActiveBorderThickness = 1;
-            this.btnSearch.ActiveCornerRadius = 20;
-            this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnSearch.BackColor = System.Drawing.SystemColors.Control;
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-            this.btnSearch.ButtonText = "Tìm Kiếm";
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnSearch.IdleBorderThickness = 1;
-            this.btnSearch.IdleCornerRadius = 20;
-            this.btnSearch.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnSearch.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnSearch.Location = new System.Drawing.Point(247, 38);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(175, 40);
-            this.btnSearch.TabIndex = 46;
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.ActiveBorderThickness = 1;
-            this.btnCancel.ActiveCornerRadius = 20;
-            this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
-            this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
-            this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
-            this.btnCancel.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
-            this.btnCancel.ButtonText = "Huỷ Tìm";
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnCancel.IdleBorderThickness = 1;
-            this.btnCancel.IdleCornerRadius = 20;
-            this.btnCancel.IdleFillColor = System.Drawing.Color.White;
-            this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
-            this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(247, 38);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(175, 40);
-            this.btnCancel.TabIndex = 48;
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnCancel.Visible = false;
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.AutoSize = false;
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.AutoSize = false;
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.AutoSize = false;
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.AutoSize = false;
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // btnInRoomStudent
-            // 
-            this.btnInRoomStudent.ActiveBorderThickness = 1;
-            this.btnInRoomStudent.ActiveCornerRadius = 20;
-            this.btnInRoomStudent.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnInRoomStudent.ActiveForecolor = System.Drawing.Color.White;
-            this.btnInRoomStudent.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            this.btnInRoomStudent.BackColor = System.Drawing.SystemColors.Control;
-            this.btnInRoomStudent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInRoomStudent.BackgroundImage")));
-            this.btnInRoomStudent.ButtonText = "Sinh Viên Đang Ở";
-            this.btnInRoomStudent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInRoomStudent.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInRoomStudent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnInRoomStudent.IdleBorderThickness = 1;
-            this.btnInRoomStudent.IdleCornerRadius = 20;
-            this.btnInRoomStudent.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnInRoomStudent.IdleForecolor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnInRoomStudent.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.btnInRoomStudent.Location = new System.Drawing.Point(247, 60);
-            this.btnInRoomStudent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnInRoomStudent.Name = "btnInRoomStudent";
-            this.btnInRoomStudent.Size = new System.Drawing.Size(175, 40);
-            this.btnInRoomStudent.TabIndex = 53;
-            this.btnInRoomStudent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnInRoomStudent.Click += new System.EventHandler(this.btnInRoomStudent_Click);
-            // 
             // fRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1115, 497);
+            this.ClientSize = new System.Drawing.Size(1115, 476);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.labelName);
@@ -891,7 +863,6 @@ namespace DormitoryManagementSoftware
         private System.Windows.Forms.GroupBox groupBox4;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCLose;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAddRoom;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnRoomType;
         private Bunifu.Framework.UI.BunifuThinButton2 btnUpdate;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.GroupBox groupBox3;

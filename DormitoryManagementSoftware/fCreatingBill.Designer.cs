@@ -461,7 +461,7 @@ namespace DormitoryManagementSoftware
             this.Controls.Add(this.labelName);
             this.Name = "fCreatingBill";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Thanh Toán Hóa Đơn";
+            this.Text = "Tạo Hóa Đơn";
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox1.ResumeLayout(false);

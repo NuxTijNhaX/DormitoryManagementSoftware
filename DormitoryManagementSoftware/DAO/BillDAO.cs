@@ -30,7 +30,7 @@ namespace DormitoryManagementSoftware.DAO
 
         public bool CreateBill(int idBillType, int idRoom, int price, int month, DateTime creating)
         {
-            string query = $"INSERT BILL (IDBILLTYPE, IDROOM, PRICE, FORMONTH, CREATING) VALUES ({idBillType}, {idRoom}, {price}, {month}, CAST(N'{creating}' AS DATE))";
+            string query = $"INSERT BILL (IDBILLTYPE, IDROOM, PRICE, FORMONTH, CREATING) VALUES ({idBillType}, {idRoom}, {price}, {month}, CAST(N'{creating}' AS DATE));";
 
             return DataProvider.Instance.ExecuteNonQuery(query) > 0;
         }
@@ -44,9 +44,17 @@ namespace DormitoryManagementSoftware.DAO
 
         public bool AddStudentPayBill(int idBill, int idStudent)
         {
-            string query = $"UPDATE BILL SET IDSTUDENT = {idBill} WHERE ID = {idStudent};";
+            DateTime now = DateTime.Now;
+            string query = $"UPDATE BILL SET IDSTUDENT = {idStudent}, STATUS = N'Đã Thanh Toán', PAYMENT = CAST(N'{now}' AS DATE) WHERE ID = {idBill};";
 
             return DataProvider.Instance.ExecuteNonQuery(query) > 0;
+        }
+
+        public DataTable GetBillByStatus(string status)
+        {
+            string query = "USP_LoadBillByStatus @status";
+
+            return DataProvider.Instance.ExecuteQuery(query, new object[] { status });
         }
     }
 }

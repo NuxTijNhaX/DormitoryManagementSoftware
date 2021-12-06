@@ -251,6 +251,19 @@ namespace DormitoryManagementSoftware
             btnImgManageBills_Click(sender, e);
         }
 
+        private void fDormitoryManagement_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn Có Muốn Thoát Ứng Dụng?", "Thông Báo", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+        
         #endregion
     }
 }

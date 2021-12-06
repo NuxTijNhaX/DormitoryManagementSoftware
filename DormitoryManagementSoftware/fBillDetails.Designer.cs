@@ -1,7 +1,7 @@
 ﻿
 namespace DormitoryManagementSoftware
 {
-    partial class fReport
+    partial class fBillDetails
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,14 @@ namespace DormitoryManagementSoftware
         {
             this.SuspendLayout();
             // 
-            // fReport
+            // fBillDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "fReport";
+            this.Name = "fBillDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Báo Cáo Thống Kê";
+            this.Text = "Chi Tiết Hóa Đơn";
             this.ResumeLayout(false);
 
         }

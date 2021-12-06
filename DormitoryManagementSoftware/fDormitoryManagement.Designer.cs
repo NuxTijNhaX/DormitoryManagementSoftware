@@ -882,6 +882,7 @@ namespace DormitoryManagementSoftware
             this.Name = "fDormitoryManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần Mềm Quản Lý Ký Túc Xá";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fDormitoryManagement_FormClosing);
             this.btnCreateReports.ResumeLayout(false);
             this.btnCreateReports.PerformLayout();
             this.btnManageBills.ResumeLayout(false);

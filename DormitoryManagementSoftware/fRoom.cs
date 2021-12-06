@@ -20,7 +20,6 @@ namespace DormitoryManagementSoftware
             InitializeComponent();
             LoadFullRoomType();
             LoadFullRoom(GetFullRoom());
-            comboboxID.DisplayMember = "id";
         }
 
         #region Methods
@@ -33,6 +32,7 @@ namespace DormitoryManagementSoftware
             dataGridViewRoom.DataSource = source;
             bindingRoom.BindingSource = source;
             comboboxID.DataSource = source;
+            comboboxID.DisplayMember = "id";
         }
 
         private void LoadFullRoomType()
@@ -42,9 +42,6 @@ namespace DormitoryManagementSoftware
             comboBoxRoomType.DisplayMember = "Name";
             if (table.Rows.Count > 0)
                 comboBoxRoomType.SelectedIndex = 0;
-
-            // _fRoomtType = new fRoomType(table);
-            // txbLimitPerson.DataBindings.Add(new Binding("Text", comboBoxRoomType.DataSource, "limitPerson"));
         }
 
         private DataTable GetFullRoom()
@@ -55,6 +52,16 @@ namespace DormitoryManagementSoftware
         private DataTable GetFullRoomType()
         {
             return RoomTypeDAO.Instance.LoadFullRoomType();
+        }
+
+        private DataTable GetSearchRoom()
+        {
+            return RoomDAO.Instance.GetSearchRoomByName(txbSearch.Text);
+        }
+
+        private void Search()
+        {
+            LoadFullRoom(GetSearchRoom());
         }
 
         /*
@@ -167,14 +174,8 @@ namespace DormitoryManagementSoftware
 
         private void btnAddRoom_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chức Năng Đang Được Bảo Trì\nVui Lòng Thông Cảm!", "Thông Báo", MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
-        }
-
-        private void btnRoomType_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức Năng Đang Được Bảo Trì\nVui Lòng Thông Cảm!", "Thông Báo", MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            fAddRoom f = new fAddRoom();
+            f.ShowDialog();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -185,8 +186,13 @@ namespace DormitoryManagementSoftware
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chức Năng Đang Được Bảo Trì\nVui Lòng Thông Cảm!", "Thông Báo", MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            txbSearch.Text = txbSearch.Text.Trim();
+            if (txbSearch.Text != string.Empty)
+            {
+                btnSearch.Visible = false;
+                btnCancel.Visible = true;
+                Search();
+            }
         }
 
         private void dataGridViewRoom_SelectionChanged(object sender, EventArgs e)
@@ -203,6 +209,14 @@ namespace DormitoryManagementSoftware
             int id = int.Parse(comboboxID.Text);
             fInRoomStudent f = new fInRoomStudent(id);
             f.ShowDialog();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            LoadFullRoom(GetFullRoom());
+
+            btnCancel.Visible = false;
+            btnSearch.Visible = true;
         }
     }
 }

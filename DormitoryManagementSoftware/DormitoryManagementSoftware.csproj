@@ -161,6 +161,12 @@
     <Compile Include="DTO\Account.cs" />
     <Compile Include="DTO\Room.cs" />
     <Compile Include="DTO\Student.cs" />
+    <Compile Include="fAddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddRoom.Designer.cs">
+      <DependentUpon>fAddRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="fAddStaff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,12 @@
     </Compile>
     <Compile Include="fBill.Designer.cs">
       <DependentUpon>fBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBillDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBillDetails.Designer.cs">
+      <DependentUpon>fBillDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="fContract.cs">
       <SubType>Form</SubType>
@@ -259,6 +271,9 @@
     <Compile Include="fUserInfo.Designer.cs">
       <DependentUpon>fUserInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="fAddRoom.resx">
+      <DependentUpon>fAddRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fAddStaff.resx">
       <DependentUpon>fAddStaff.cs</DependentUpon>
     </EmbeddedResource>
@@ -267,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fBill.resx">
       <DependentUpon>fBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBillDetails.resx">
+      <DependentUpon>fBillDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fContract.resx">
       <DependentUpon>fContract.cs</DependentUpon>
