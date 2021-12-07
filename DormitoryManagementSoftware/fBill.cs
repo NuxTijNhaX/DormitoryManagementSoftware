@@ -65,6 +65,14 @@ namespace DormitoryManagementSoftware
 
         private void btnPayBill_Click(object sender, EventArgs e)
         {
+            if (dataGridViewRoomBill.SelectedRows[0].Cells[3].Value.ToString() == "Đã Thanh Toán")
+            {
+                MessageBox.Show($"Hóa Đơn Đã Được Thanh Toán", "Thông Báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                return;
+            }
+
             int idBill = int.Parse(dataGridViewRoomBill.SelectedRows[0].Cells[0].Value.ToString());
             int idStudent = StudentDAO.Instance.GetIdByName(cbxStudentName.Text);
 
@@ -88,8 +96,20 @@ namespace DormitoryManagementSoftware
 
         private void btnBillDetail_Click(object sender, EventArgs e)
         {
-            fBillDetails f = new fBillDetails();
-            f.ShowDialog();
+            if (dataGridViewRoomBill.SelectedRows[0].Cells[3].Value.ToString() == "Chưa Thanh Toán")
+            {
+                MessageBox.Show($"Hóa Đơn Chưa Thanh Toán\nNên Không Thể Xem Chi Tiết", "Thông Báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                int roomId = int.Parse(dataGridViewRoomBill.SelectedRows[0].Cells[0].Value.ToString());
+
+                fBillDetails f = new fBillDetails(roomId);
+                f.ShowDialog();
+            }
+            
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

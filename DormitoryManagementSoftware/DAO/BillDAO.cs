@@ -56,5 +56,27 @@ namespace DormitoryManagementSoftware.DAO
 
             return DataProvider.Instance.ExecuteQuery(query, new object[] { status });
         }
+
+        public DataTable GetDataForReporting(string type, int month, int year)
+        {
+            string query = "USP_LoadBillByType @type , @month , @year";
+
+            return DataProvider.Instance.ExecuteQuery(query, new object[] { type, month, year });
+        }
+
+        public int GetSumForReporting(string type, int month, int year)
+        {
+            string query = "USP_LoadSumByType @type , @month , @year";
+
+            return int.Parse(DataProvider.Instance.ExecuteQuery(query, new object[] {type, month, year}).Rows[0][0]
+                .ToString());
+        }
+
+        public DataRow GetBillById(int id)
+        {
+            string query = "USP_LoadBillById @id";
+
+            return DataProvider.Instance.ExecuteQuery(query, new object[] {id}).Rows[0];
+        }
     }
 }

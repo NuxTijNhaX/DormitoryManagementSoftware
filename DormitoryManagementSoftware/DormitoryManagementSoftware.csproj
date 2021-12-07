@@ -137,6 +137,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -157,6 +158,7 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="DAO\RoomTypeDAO.cs" />
+    <Compile Include="DAO\RulesDAO.cs" />
     <Compile Include="DAO\StudentDAO.cs" />
     <Compile Include="DTO\Account.cs" />
     <Compile Include="DTO\Room.cs" />
