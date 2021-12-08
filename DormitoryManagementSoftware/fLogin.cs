@@ -32,13 +32,13 @@ namespace DormitoryManagementSoftware
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //if (txbUserName.TextLength < 1 || txbPassword.TextLength < 1)
-            //{
-            //    MessageBox.Show("Vui Lòng Nhập Đầy Đủ!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
+            if (txbUserName.TextLength < 1 || txbPassword.TextLength < 1)
+            {
+                MessageBox.Show("Vui Lòng Nhập Đầy Đủ!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            if (true) //Login()
+            if (Login())
             {
                 Form fDM = new fDormitoryManagement(txbUserName.Text);
                 this.Hide();
